@@ -1,0 +1,4 @@
+venv/*
+fileshare/LoginPassword
+**/__pycache__/
+FileSharingDRF-workspace.code-workspace
