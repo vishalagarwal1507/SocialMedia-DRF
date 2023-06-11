@@ -23,6 +23,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/fileupload/', include('home.urls')),
+    path("api-auth/", include("rest_framework.urls", namespace="rest_framework")),
     path('api/users/', include('users.urls')),
 
 ]
