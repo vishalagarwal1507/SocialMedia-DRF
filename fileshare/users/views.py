@@ -21,4 +21,5 @@ class UsersAPIView(APIView):
         return Response(serializer.errors, status = 400)
     
 class MyTokenObtainPairView(TokenObtainPairView):
+    print("Test")
     serializer_class = MyTokenObtainPairSerializer
