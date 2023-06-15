@@ -12,10 +12,13 @@ class UserSerializer(serializers.ModelSerializer):
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     @classmethod
     def get_token(cls, user):
-        print("Token",token)
+        
         token = super().get_token(user)
+        print("Token",token)
         token['username'] = user.username
+        print("Token",token)
         token['email'] = user.email
+        print("Token",token)
         return token
 
 
